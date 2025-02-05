@@ -1,3 +1,4 @@
 *.exe
 code_ptit.cpp
 *.o
+test.cpp
