@@ -2,3 +2,4 @@
 code_ptit.cpp
 *.o
 test.cpp
+*.txt
