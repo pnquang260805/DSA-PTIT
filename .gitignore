@@ -1,5 +1,5 @@
 *.exe
-code_ptit.cpp
+code.cpp
 *.o
 test.cpp
 *.txt
