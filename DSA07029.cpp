@@ -36,6 +36,13 @@ void solve(){
             st.push(expaned);
         }
     }
+    /*
+        3[a]2[bc]
+        -->
+        | "aaa" |
+        | "bcbc"|
+
+    */
     string res = "";
     while(!st.empty()){
         res = st.top() + res;
