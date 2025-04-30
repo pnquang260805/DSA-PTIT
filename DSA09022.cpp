@@ -1,30 +1,33 @@
-// DFS TRÊN ĐỒ THỊ CÓ HƯỚNG
+// DSA09022 - DFS TRÊN ĐỒ THỊ CÓ HƯỚNG
 
 #include <bits/stdc++.h>
 using namespace std;
 
-void DFS(int u, vector<vector<int>> &adj, vector<bool> &visited){
-    visited[u] = true;
-    cout << u << " ";
+typedef vector<vector<int>> vv;
 
+void dfs(int u, vv &adj, vector<int> &color){
+    color[u] = 1;
+    cout << u << " ";
     for(int v : adj[u]){
-        if(!visited[v]){
-            DFS(v, adj, visited);
+        if(color[v] == 0){
+            dfs(v, adj, color);
         }
     }
+    color[u] = 2;
 }
 
 void solve(){
-    int v, e, u;
-    cin >> v >> e >> u;
-    vector<vector<int>> adj(v+1);
-    for(int i = 1; i <= e; i++){
+    int n, m, k;
+    cin >> n >> m >> k;
+    vv adj(n+1);
+    vector<int> color(n+1, 0);
+    while(m--){
         int x, y;
         cin >> x >> y;
         adj[x].push_back(y);
+//        adj[y].push_back(x);
     }
-    vector<bool> visited(v+1, false);
-    DFS(u, adj, visited);
+    dfs(k, adj, color);
 }
 
 int main(){
