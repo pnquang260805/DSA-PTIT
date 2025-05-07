@@ -13,7 +13,6 @@ void solve(){
     for(p &x : a){
         cin >> x.first >> x.second;
     }
-    /* !!!!!!!!!!!!!!!!!!!!!!!!!!!! */
     sort(a.begin(), a.end(), [](p a, p b){
         return a.second < b.second;
     });
