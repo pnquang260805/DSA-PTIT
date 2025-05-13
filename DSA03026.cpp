@@ -1,4 +1,5 @@
-// DSA03027 - GIÁ TRỊ LỚN NHẤT
+// DSA03026 - LỰA CHỌN THAM LAM
+// https://www.geeksforgeeks.org/find-smallest-number-with-given-number-of-digits-and-digit-sum/
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -6,7 +7,7 @@ using namespace std;
 using ll = long long;
 
 void large(ll n, ll k){
-    if(9 * n < k){
+    if(k <= 0 || 9 * n < k){
         cout << -1;
         return;
     }
@@ -27,7 +28,7 @@ void large(ll n, ll k){
 }
 
 void small(ll n, ll k){
-    if(9*n < k){
+    if(9*n < k || k <= 0){
         cout << -1;
         return;
     }
