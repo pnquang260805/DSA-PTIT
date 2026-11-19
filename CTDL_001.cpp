@@ -31,5 +31,6 @@ int main() {
     cin >> t;
     n = (t % 2 == 0) ? t / 2 : t / 2 + 1;
     gen(1);
+    cout << endline;
     return 0;
 }
