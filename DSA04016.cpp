@@ -41,6 +41,6 @@ int main(){
     cin >> t;
     while(t--){
         solve();
-        cout << endl;
+        cout << "\n;
     }
 }
