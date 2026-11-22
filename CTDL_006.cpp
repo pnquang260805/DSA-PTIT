@@ -68,6 +68,6 @@ int main() {
     }
     lst.filtering();
     lst.show();
-    cout << endl;
+    cout << "\n";
     return 0;
 }
