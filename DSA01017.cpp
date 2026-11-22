@@ -1,5 +1,6 @@
 // DSA01017 - MÃ GRAY 3
 // https://www.geeksforgeeks.org/gray-to-binary-and-binary-to-gray-conversion/
+
 #include <bits/stdc++.h>
 using namespace std;
 
